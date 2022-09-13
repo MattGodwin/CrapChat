@@ -21,16 +21,6 @@ namespace CrapChat
         {
             InitializeComponent();
         }
-        private void TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-        private void SendClick(object sender, RoutedEventArgs e)
-        {
-            string userMessage = textBox.Text.ToString();
-            textBox.Clear();
-            MessageBox.Show(userMessage);
-        }
     }
 
 }
