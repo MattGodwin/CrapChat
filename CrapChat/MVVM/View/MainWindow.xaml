@@ -32,7 +32,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <ListView Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Messages}"/>
-        <Button Grid.Column="1" Grid.Row="2" Content="Send" Command="{Binding SendMessageCommand}"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="Send" Command="{Binding SendMessageCommand}" />
         <Button Grid.Column="1" Grid.Row="0" Content="Connect" Command="{Binding ConnectToServerCommand}"/>
     </Grid>
 </Window>

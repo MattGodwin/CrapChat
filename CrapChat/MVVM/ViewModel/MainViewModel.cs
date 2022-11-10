@@ -34,7 +34,6 @@ namespace CrapChat.MVVM.ViewModel
             _server.userDisconnectEvent += RemoveUser;
             ConnectToServerCommand = new RelayCommand(o => _server.ConnectToServer(Username), o => !string.IsNullOrEmpty(Username));
             SendMessageCommand = new RelayCommand(o => _server.SendMessageToServer(Message), o => !string.IsNullOrEmpty(Message));
-
         }
         private void MessageRecieved()
         {

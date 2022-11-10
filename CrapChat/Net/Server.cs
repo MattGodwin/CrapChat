@@ -26,7 +26,7 @@ namespace CrapChat.Net
         {
             if (!_client.Connected)
             {
-                _client.Connect("127.0.0.1", 6969);
+                _client.Connect("seris.duckdns.org", 6969);
                 PacketReader = new PacketReader(_client.GetStream());
 
                 if(!string.IsNullOrEmpty(username))
@@ -60,7 +60,6 @@ namespace CrapChat.Net
                             userDisconnectEvent?.Invoke();
                             break;
                         default:
-                            Console.WriteLine("ah yes ..");
                             break;
                     }
                 }
