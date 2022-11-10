@@ -14,7 +14,7 @@ namespace CrapChatServer
         static void Main(string[] args)
         {
             _users = new List<Client>();
-            _listener = new TcpListener(IPAddress.Parse("seris.duckdns.org"), 6969);
+            _listener = new TcpListener(IPAddress.Parse("127.0.0.1"), 6969);
             _listener.Start();
 
             while (true)
